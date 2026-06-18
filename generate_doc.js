@@ -326,10 +326,10 @@ const doc = new Document({
       bullet("Health check para monitoreo del servicio"),
       spacer(),
       h2("1.2 Stack tecnológico"),
-      bullet("Lenguaje: Python 3.12"),
+      bullet("Lenguaje: Python 3.11.0"),
       bullet("Framework: Flask 3.0.3"),
       bullet("Pruebas: pytest 8.2.2"),
-      bullet("Infraestructura: Linux Ubuntu 24.04 (entorno contenedor)"),
+      bullet("Infraestructura: Linux Ubuntu 22.04 (GitHub Codespaces)"),
       bullet("CI/CD: Pipeline bash local + definición GitHub Actions"),
       spacer(),
       h2("1.3 Endpoints de la API"),
@@ -476,10 +476,10 @@ const doc = new Document({
         rows: [
           new TableRow({ children: [headerCell("Error detectado",2340), headerCell("Tipo",2340), headerCell("Impacto",2340), headerCell("Mejora propuesta",2340)] }),
           new TableRow({ children: [
-            cell("datetime.utcnow() deprecado",2340),
-            cell("Advertencia Python 3.12",2340),
-            cell("Bajo - solo warning",2340),
-            cell("Usar datetime.now(UTC)",2340),
+            cell("Pipeline con rutas hardcodeadas",2340),
+            cell("Bug en script",2340),
+            cell("Medio - pipeline falla en otros entornos",2340),
+            cell("Usar rutas relativas en scripts",2340),
           ]}),
           new TableRow({ children: [
             cell("Store en memoria sin persistencia",2340),

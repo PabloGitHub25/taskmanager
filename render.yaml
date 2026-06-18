@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: task-manager
+    env: python
+    buildCommand: pip install -r app/requirements.txt
+    startCommand: python app/app.py
+    envVars:
+      - key: ENV
+        value: prod
+      - key: PORT
+        value: 10000
